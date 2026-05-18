@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI/ML Professional Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #12110F;
+  --ink-mid: #3D3B37;
+  --ink-light: #6B6860;
+  --ink-faint: #A8A49D;
+  --cream: #F7F4EE;
+  --cream-dark: #EDE9E0;
+  --accent: #1B4FA8;
+  --accent-light: #E8EFFA;
+  --gold: #B07B2A;
+  --gold-light: #FAF0DC;
+  --border: #DDD9CF;
+  --white: #FFFFFF;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+/* ── NAV ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 60px;
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--cream); }
+
+/* ── HERO ── */
+.hero {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 96px 48px 80px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 64px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 62px;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+.hero-name em {
+  font-style: italic;
+  color: #8BAEE8;
+}
+.hero-bio {
+  font-size: 16px;
+  color: #B5B0A8;
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tag {
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid #3A3832;
+  color: #9B978F;
+}
+.hero-card {
+  background: #1C1B18;
+  border-radius: 16px;
+  border: 1px solid #2E2D29;
+  padding: 32px 28px;
+}
+.hero-card-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.stat-item { text-align: center; }
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: var(--cream);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-size: 11px;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.hero-card-divider {
+  height: 1px;
+  background: #2E2D29;
+  margin-bottom: 24px;
+}
+.skill-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skill-list li {
+  font-size: 13px;
+  color: #9B978F;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* ── SECTION WRAPPER ── */
+.section-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ── VALUE PROPOSITION ── */
+.value-section {
+  background: var(--white);
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+.section-eyebrow {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--ink);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.section-intro {
+  font-size: 16px;
+  color: var(--ink-light);
+  max-width: 680px;
+  margin-bottom: 48px;
+  line-height: 1.75;
+}
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.value-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  background: var(--cream);
+}
+.value-icon {
+  font-size: 24px;
+  margin-bottom: 14px;
+  display: block;
+}
+.value-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.value-card-text {
+  font-size: 13.5px;
+  color: var(--ink-light);
+  line-height: 1.65;
+}
+
+/* ── ARTIFACTS ── */
+.artifacts-section {
+  padding: 80px 0;
+}
+.artifacts-section .section-wrap {
+  display: block;
+}
+
+/* ── ARTIFACT CARD ── */
+.artifact-container {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.artifact-header {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 36px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+.artifact-number {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.artifact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--cream);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.artifact-intro {
+  font-size: 14px;
+  color: #9B978F;
+  line-height: 1.65;
+  max-width: 560px;
+}
+.artifact-badge {
+  flex-shrink: 0;
+  background: #1C1B18;
+  border: 1px solid #2E2D29;
+  border-radius: 10px;
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 130px;
+}
+.badge-field {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 4px;
+}
+.badge-value {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 14px;
+}
+.badge-value:last-child { margin-bottom: 0; }
+
+.artifact-body {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.artifact-field-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 8px;
+}
+.artifact-field-text {
+  font-size: 14px;
+  color: var(--ink-mid);
+  line-height: 1.7;
+}
+.artifact-field-full {
+  grid-column: 1 / -1;
+}
+.artifact-divider {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* Tools chips */
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.tool-chip {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border: 1px solid #C5D7F5;
+}
+
+/* Value proposition block */
+.vp-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 4px;
+}
+.vp-block {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.vp-block-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.vp-block-text {
+  font-size: 13.5px;
+  color: var(--ink-mid);
+  line-height: 1.65;
+}
+
+/* Infographic embed */
+.infographic-wrap {
+  grid-column: 1 / -1;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #F5F2EB;
+}
+.infographic-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+
+/* ── EMBEDDED INFOGRAPHIC ── */
+.infographic-inner {
+  padding: 40px 32px;
+  font-family: 'Outfit', sans-serif;
+}
+.ig-title-block { text-align: center; margin-bottom: 40px; }
+.ig-eyebrow {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: #888780; margin-bottom: 10px;
+}
+.ig-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px; color: #1A1A18; margin-bottom: 10px; line-height: 1.1;
+}
+.ig-title em { font-style: italic; color: #185FA5; }
+.ig-sub { font-size: 13.5px; color: #5F5E5A; max-width: 500px; margin: 0 auto; line-height: 1.6; }
+.ig-legend {
+  display: flex; align-items: center; justify-content: center;
+  gap: 24px; margin-bottom: 36px; flex-wrap: wrap;
+}
+.ig-legend-item { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #444441; font-weight: 500; }
+.ig-dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot-s { background: #185FA5; } .dot-u { background: #0F6E56; }
+
+.ig-domain { margin-bottom: 32px; }
+.ig-domain-header {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 14px; padding-bottom: 10px;
+}
+.ig-domain-header.tab { border-bottom: 1.5px solid #854F0B; color: #854F0B; }
+.ig-domain-header.vis { border-bottom: 1.5px solid #993C1D; color: #993C1D; }
+.ig-domain-header.nlp { border-bottom: 1.5px solid #534AB7; color: #534AB7; }
+.ig-domain-header.gen { border-bottom: 1.5px solid #993556; color: #993556; }
+.ig-domain-icon {
+  width: 30px; height: 30px; border-radius: 7px;
+  display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;
+}
+.icon-tab { background: #FAEEDA; } .icon-vis { background: #FAECE7; }
+.icon-nlp { background: #EEEDFE; } .icon-gen { background: #FBEAF0; }
+.ig-domain-label { font-family: 'Playfair Display', serif; font-size: 20px; }
+.ig-domain-count { margin-left: auto; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.5; }
+.ig-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 12px; }
+.ig-card {
+  background: #FFFFFF; border-radius: 10px; border: 1px solid #E2DED5;
+  padding: 16px 14px; display: flex; flex-direction: column; gap: 8px;
+}
+.ig-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; }
+.ig-card-name { font-family: 'Playfair Display', serif; font-size: 14.5px; color: #1A1A18; flex: 1; line-height: 1.25; }
+.ig-badge {
+  flex-shrink: 0; font-size: 8.5px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 3px 7px; border-radius: 20px; white-space: nowrap;
+}
+.badge-s { background: #E6F1FB; color: #185FA5; }
+.badge-u { background: #E1F5EE; color: #0F6E56; }
+.ig-card-div { height: 1px; background: #EAE7DF; }
+.ig-lbl { font-size: 8.5px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #B4B2A9; margin-bottom: 3px; }
+.ig-txt { font-size: 11.5px; line-height: 1.55; color: #444441; }
+.ig-use { font-size: 11px; color: #5F5E5A; line-height: 1.5; font-style: italic; }
+.ig-summary {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-top: 36px;
+}
+.ig-sum-card { border-radius: 8px; padding: 16px; text-align: center; }
+.sc-t { background: #FAEEDA; } .sc-v { background: #FAECE7; }
+.sc-n { background: #EEEDFE; } .sc-g { background: #FBEAF0; }
+.ig-sum-num { font-family: 'Playfair Display', serif; font-size: 28px; line-height: 1; margin-bottom: 4px; }
+.sc-t .ig-sum-num { color: #854F0B; } .sc-v .ig-sum-num { color: #993C1D; }
+.sc-n .ig-sum-num { color: #534AB7; } .sc-g .ig-sum-num { color: #993556; }
+.ig-sum-lbl { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.sc-t .ig-sum-lbl { color: #BA7517; } .sc-v .ig-sum-lbl { color: #993C1D; }
+.sc-n .ig-sum-lbl { color: #534AB7; } .sc-g .ig-sum-lbl { color: #993556; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink);
+  color: var(--ink-faint);
+  text-align: center;
+  padding: 40px 48px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+footer span { color: var(--gold); }
+
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .hero { grid-template-columns: 1fr; padding: 60px 20px; }
+  .hero-card { display: none; }
+  .section-wrap { padding: 0 20px; }
+  .value-grid, .artifact-body { grid-template-columns: 1fr; }
+  .vp-grid { grid-template-columns: 1fr; }
+  .ig-summary { grid-template-columns: repeat(2,1fr); }
+  .artifact-header { flex-direction: column; }
+  .hero-name { font-size: 40px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">AI/ML Portfolio</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#value">Value</a></li>
+    <li><a href="#artifacts">Artifacts</a></li>
+  </ul>
+</nav>
+
+<!-- HERO / BIO -->
+<div style="background: var(--ink);">
+  <div class="hero" id="about">
+    <div>
+      <p class="hero-eyebrow">AI &amp; Machine Learning Professional Portfolio</p>
+      <h1 class="hero-name">Bridging <em>Intelligence</em><br>with Industry</h1>
+      <p class="hero-bio">
+        I am a professional with a growing foundation in artificial intelligence and machine learning,
+        currently building expertise in AI applications, algorithm design, and data-driven problem solving.
+        My background spans manufacturing operations and production planning, giving me a practical lens
+        through which I approach technical concepts — always asking how they translate into real-world value.
+        This portfolio documents that journey, one artifact at a time.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Data Analysis</span>
+        <span class="tag">Production Systems</span>
+        <span class="tag">AI Strategy</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <p class="hero-card-label">At a Glance</p>
+      <div class="stat-row">
+        <div class="stat-item">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">AI Domains</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Algorithms</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Portfolio</span>
+        </div>
+      </div>
+      <div class="hero-card-divider"></div>
+      <ul class="skill-list">
+        <li><span class="skill-dot"></span>Supervised &amp; Unsupervised Learning</li>
+        <li><span class="skill-dot"></span>Computer Vision &amp; NLP</li>
+        <li><span class="skill-dot"></span>Generative AI Models</li>
+        <li><span class="skill-dot"></span>Data Visualization</li>
+        <li><span class="skill-dot"></span>Cross-domain Problem Solving</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- VALUE PROPOSITION -->
+<div class="value-section" id="value">
+  <div class="section-wrap">
+    <p class="section-eyebrow">Personal Value Proposition</p>
+    <h2 class="section-title">What I Bring to the Table</h2>
+    <p class="section-intro">
+      I combine hands-on experience in complex operational environments with a growing command of AI and machine learning principles.
+      My value lies not just in understanding algorithms, but in knowing when and why to apply them to solve real problems efficiently.
+    </p>
+    <div class="value-grid">
+      <div class="value-card">
+        <span class="value-icon">🔍</span>
+        <h3 class="value-card-title">Analytical Clarity</h3>
+        <p class="value-card-text">I break down complex technical systems into structured, understandable frameworks — making AI concepts accessible to cross-functional teams and decision-makers.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">⚙️</span>
+        <h3 class="value-card-title">Applied Thinking</h3>
+        <p class="value-card-text">Years working in data-intensive manufacturing operations give me a strong instinct for matching the right tool to the right problem, with a focus on efficiency and impact.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">📈</span>
+        <h3 class="value-card-title">Continuous Growth</h3>
+        <p class="value-card-text">I approach every learning artifact as a professional deliverable. My portfolio reflects not just what I have studied, but how I think, organize, and communicate knowledge.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTIFACTS -->
+<div class="artifacts-section" id="artifacts">
+  <div class="section-wrap">
+    <p class="section-eyebrow">Course Artifacts</p>
+    <h2 class="section-title">Portfolio Work</h2>
+    <p class="section-intro">
+      Each artifact below is a tangible deliverable produced during coursework, structured to demonstrate both technical understanding and professional communication.
+    </p>
+  </div>
+
+  <!-- ARTIFACT 1 -->
+  <div class="section-wrap">
+    <div class="artifact-container">
+      <div class="artifact-header">
+        <div>
+          <p class="artifact-number">Artifact 01</p>
+          <h3 class="artifact-title">Machine Learning Algorithm Visual Framework</h3>
+          <p class="artifact-intro">
+            A comprehensive visual reference mapping 10 machine learning algorithms across 4 major AI/ML domains,
+            organized by learning paradigm, application area, real-world use cases, and core mechanics.
+          </p>
+        </div>
+        <div class="artifact-badge">
+          <p class="badge-field">Domain</p>
+          <p class="badge-value">AI / ML</p>
+          <p class="badge-field">Type</p>
+          <p class="badge-value">Visual Infographic</p>
+          <p class="badge-field">Format</p>
+          <p class="badge-value">HTML</p>
+        </div>
+      </div>
+
+      <div class="artifact-body">
+
+        <div>
+          <p class="artifact-field-label">Objective</p>
+          <p class="artifact-field-text">
+            To develop a structured visual understanding of how machine learning algorithms are categorized
+            by learning style and application domain, enabling informed algorithm selection for real-world tasks.
+          </p>
+        </div>
+
+        <div>
+          <p class="artifact-field-label">Description</p>
+          <p class="artifact-field-text">
+            The framework covers 10 algorithms spanning tabular data (Decision Tree, Random Forest, Gradient Boosting,
+            SVM, K-Means), computer vision (CNN, PCA), NLP (Transformer/BERT, Linear Regression),
+            and generative AI (GAN, Diffusion Model). Each entry includes its type, domain, use cases, and explanation.
+          </p>
+        </div>
+
+        <div class="artifact-divider"></div>
+
+        <div class="artifact-field-full">
+          <p class="artifact-field-label">Process</p>
+          <p class="artifact-field-text">
+            I began by reviewing course materials on supervised and unsupervised learning, then identified representative algorithms for each of the four application domains covered in the module.
+            For each algorithm, I researched its core mechanism and mapped it to concrete real-world use cases to ensure the framework would be useful beyond the classroom.
+            The visual layout was designed to communicate both the learning paradigm (via color-coded badges) and the domain structure (via grouped sections), making comparisons intuitive at a glance.
+          </p>
+        </div>
+
+        <div class="artifact-divider"></div>
+
+        <div>
+          <p class="artifact-field-label">Tools and Technologies Used</p>
+          <div class="tools-list">
+            <span class="tool-chip">HTML5 / CSS3</span>
+            <span class="tool-chip">Google Fonts</span>
+            <span class="tool-chip">Visual Design Principles</span>
+            <span class="tool-chip">AI/ML Research</span>
+            <span class="tool-chip">Information Architecture</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="artifact-field-label">References</p>
+          <p class="artifact-field-text" style="font-size:13px; line-height:1.8;">
+            Course module: Supervised and Unsupervised Learning Algorithms<br>
+            Course module: Tabular Data, Computer Vision, NLP, and Generative AI<br>
+            Russell, S. &amp; Norvig, P. — Artificial Intelligence: A Modern Approach<br>
+            Goodfellow, I. et al. — Deep Learning (MIT Press)
+          </p>
+        </div>
+
+        <div class="artifact-divider"></div>
+
+        <div class="vp-grid">
+          <div class="vp-block">
+            <p class="vp-block-title">Unique Value</p>
+            <p class="vp-block-text">
+              This artifact consolidates 10 algorithms into a single visual reference that would take hours to assemble from scattered textbooks.
+              It demonstrates my ability to synthesize technical content into a clear, accessible format that professionals and learners can use immediately.
+            </p>
+          </div>
+          <div class="vp-block">
+            <p class="vp-block-title">Relevance</p>
+            <p class="vp-block-text">
+              Algorithm selection is one of the most critical early decisions in any ML project. By grounding each algorithm in its ideal domain and real use cases,
+              this framework is directly applicable to practitioners evaluating tools for business problems in industry settings.
+            </p>
+          </div>
+        </div>
+
+        <div class="artifact-divider"></div>
+
+        <!-- EMBEDDED INFOGRAPHIC -->
+        <div class="infographic-wrap artifact-field-full">
+          <p class="infographic-label">Visual Deliverable — Interactive Infographic</p>
+          <div class="infographic-inner">
+
+            <div class="ig-title-block">
+              <p class="ig-eyebrow">Portfolio Artifact · Machine Learning</p>
+              <h2 class="ig-title">Algorithm <em>Visual</em> Framework</h2>
+              <p class="ig-sub">10 machine learning algorithms across 4 domains, organized by learning style, use case, and core mechanics.</p>
+            </div>
+
+            <div class="ig-legend">
+              <div class="ig-legend-item"><span class="ig-dot dot-s"></span>Supervised — trained on labeled data</div>
+              <div class="ig-legend-item"><span class="ig-dot dot-u"></span>Unsupervised — discovers hidden patterns</div>
+            </div>
+
+            <!-- TABULAR -->
+            <div class="ig-domain">
+              <div class="ig-domain-header tab">
+                <div class="ig-domain-icon icon-tab">📊</div>
+                <span class="ig-domain-label">Tabular Data</span>
+                <span class="ig-domain-count">5 algorithms</span>
+              </div>
+              <div class="ig-cards">
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Decision Tree</span><span class="ig-badge badge-s">Supervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Recursively splits data using feature thresholds to form if-then rules at each leaf node.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Credit approval, medical diagnosis, customer churn prediction.</p></div>
+                </div>
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Random Forest</span><span class="ig-badge badge-s">Supervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Builds hundreds of decision trees on random subsets, aggregating their votes to reduce overfitting.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Fraud detection, stock prediction, disease classification.</p></div>
+                </div>
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Gradient Boosting</span><span class="ig-badge badge-s">Supervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Sequentially trains weak learners, each correcting the previous one's errors by optimizing a loss function.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Sales forecasting, Kaggle competitions, click-through rate prediction.</p></div>
+                </div>
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Support Vector Machine</span><span class="ig-badge badge-s">Supervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Finds the optimal hyperplane maximizing margin between classes; uses kernels for non-linear data.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Spam filtering, bioinformatics, handwriting recognition.</p></div>
+                </div>
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">K-Means Clustering</span><span class="ig-badge badge-u">Unsupervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Assigns data to K clusters by minimizing distance between each point and its centroid until convergence.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Customer segmentation, document grouping, anomaly detection.</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- VISION -->
+            <div class="ig-domain">
+              <div class="ig-domain-header vis">
+                <div class="ig-domain-icon icon-vis">👁</div>
+                <span class="ig-domain-label">Computer Vision</span>
+                <span class="ig-domain-count">2 algorithms</span>
+              </div>
+              <div class="ig-cards">
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Convolutional Neural Network</span><span class="ig-badge badge-s">Supervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Applies learnable filters across image regions to extract hierarchical features from edges to high-level objects.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Image classification (ResNet), object detection (YOLO), medical imaging, autonomous vehicles.</p></div>
+                </div>
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">PCA</span><span class="ig-badge badge-u">Unsupervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Computes orthogonal components capturing maximum variance, compressing high-dimensional data.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Image compression, face recognition preprocessing, noise reduction, visualization.</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NLP -->
+            <div class="ig-domain">
+              <div class="ig-domain-header nlp">
+                <div class="ig-domain-icon icon-nlp">💬</div>
+                <span class="ig-domain-label">Natural Language Processing</span>
+                <span class="ig-domain-count">2 algorithms</span>
+              </div>
+              <div class="ig-cards">
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Transformer (BERT)</span><span class="ig-badge badge-s">Supervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Self-attention weighs every word against every other word, enabling rich bidirectional context understanding.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Sentiment analysis, question answering, named entity recognition, search ranking.</p></div>
+                </div>
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Linear Regression</span><span class="ig-badge badge-s">Supervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Models relationships between features and a continuous output by fitting a hyperplane minimizing squared residuals.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Price prediction, trend analysis, feature importance scoring in NLP pipelines.</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- GENERATIVE AI -->
+            <div class="ig-domain">
+              <div class="ig-domain-header gen">
+                <div class="ig-domain-icon icon-gen">✦</div>
+                <span class="ig-domain-label">Generative AI</span>
+                <span class="ig-domain-count">2 algorithms</span>
+              </div>
+              <div class="ig-cards">
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Generative Adversarial Network</span><span class="ig-badge badge-u">Unsupervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">A Generator and Discriminator compete in a minimax game until the generator produces indistinguishable outputs.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Synthetic image generation, deepfake detection, data augmentation, style transfer.</p></div>
+                </div>
+                <div class="ig-card">
+                  <div class="ig-card-top"><span class="ig-card-name">Diffusion Model</span><span class="ig-badge badge-u">Unsupervised</span></div>
+                  <div class="ig-card-div"></div>
+                  <div><p class="ig-lbl">How it works</p><p class="ig-txt">Adds noise progressively during training, then learns to reverse that process to generate new data from pure noise.</p></div>
+                  <div><p class="ig-lbl">Use Cases</p><p class="ig-use">Stable Diffusion, DALL-E image synthesis, drug molecule design, audio generation.</p></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="ig-summary">
+              <div class="ig-sum-card sc-t"><div class="ig-sum-num">5</div><div class="ig-sum-lbl">Tabular Data</div></div>
+              <div class="ig-sum-card sc-v"><div class="ig-sum-num">2</div><div class="ig-sum-lbl">Computer Vision</div></div>
+              <div class="ig-sum-card sc-n"><div class="ig-sum-num">2</div><div class="ig-sum-lbl">NLP</div></div>
+              <div class="ig-sum-card sc-g"><div class="ig-sum-num">2</div><div class="ig-sum-lbl">Generative AI</div></div>
+            </div>
+
+          </div><!-- /infographic-inner -->
+        </div><!-- /infographic-wrap -->
+
+      </div><!-- /artifact-body -->
+    </div><!-- /artifact-container -->
+  </div><!-- /section-wrap -->
+</div><!-- /artifacts-section -->
+
+<footer>
+  <p>AI/ML Professional Portfolio &nbsp;|&nbsp; Built with <span>HTML5</span> &nbsp;|&nbsp; Course Artifact — Indiana Wesleyan University</p>
+</footer>
+
+</body>
+</html>
