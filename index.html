@@ -831,6 +831,268 @@ footer span { color: var(--gold); }
       </div><!-- /artifact-body -->
     </div><!-- /artifact-container -->
   </div><!-- /section-wrap -->
+
+  <!-- ARTIFACT 02 -->
+  <div class="section-wrap" style="margin-top: 40px;">
+    <div class="artifact-container">
+      <div class="artifact-header">
+        <div>
+          <p class="artifact-number">Artifact 02</p>
+          <h3 class="artifact-title">Training Generative AI LLMs: Process &amp; Resource Costs</h3>
+          <p class="artifact-intro">
+            A detailed visual breakdown of how large language models like GPT-4, Claude, Gemini, and LLaMA are trained — from raw data collection through deployment — with real-world cost, compute, energy, and time figures for each major model.
+          </p>
+        </div>
+        <div class="artifact-badge">
+          <p class="badge-field">Domain</p>
+          <p class="badge-value">Generative AI</p>
+          <p class="badge-field">Type</p>
+          <p class="badge-value">Infographic</p>
+          <p class="badge-field">Format</p>
+          <p class="badge-value">HTML</p>
+        </div>
+      </div>
+
+      <div class="artifact-body">
+        <div>
+          <p class="artifact-field-label">Objective</p>
+          <p class="artifact-field-text">To clearly illustrate the end-to-end pipeline for training generative AI large language models and communicate the scale of resources required, making complex infrastructure visible to both technical and non-technical audiences.</p>
+        </div>
+        <div>
+          <p class="artifact-field-label">Description</p>
+          <p class="artifact-field-text">The infographic covers 6 training phases from data collection to deployment, followed by a model comparison table across GPT-4, Claude 3 Opus, Gemini Ultra, and LLaMA 3 — with estimated compute, energy, cost, and training time figures drawn from published research and public reporting.</p>
+        </div>
+        <div class="artifact-divider"></div>
+        <div class="artifact-field-full">
+          <p class="artifact-field-label">Process</p>
+          <p class="artifact-field-text">I began by reviewing how transformer-based LLMs are trained, tracing the full pipeline from raw text collection to RLHF alignment and deployment. I then researched published cost and compute estimates for each major model from sources including technical reports, research papers, and industry coverage. The visual was structured to make the pipeline sequential and scannable, with a resource comparison table allowing side-by-side evaluation across models. Color coding separates the training phase types, and cost figures are contextualized to help non-technical readers grasp the scale.</p>
+        </div>
+        <div class="artifact-divider"></div>
+        <div>
+          <p class="artifact-field-label">Tools and Technologies Used</p>
+          <div class="tools-list">
+            <span class="tool-chip">HTML5 / CSS3</span>
+            <span class="tool-chip">Visual Design</span>
+            <span class="tool-chip">LLM Research</span>
+            <span class="tool-chip">Data Synthesis</span>
+            <span class="tool-chip">Information Architecture</span>
+          </div>
+        </div>
+        <div>
+          <p class="artifact-field-label">References</p>
+          <p class="artifact-field-text" style="font-size:13px; line-height:1.8;">
+            OpenAI. (2023). GPT-4 Technical Report.<br>
+            Touvron et al. (2023). LLaMA 2: Open Foundation and Fine-Tuned Chat Models. Meta AI.<br>
+            Google DeepMind. (2023). Gemini: A Family of Highly Capable Multimodal Models.<br>
+            Anthropic. (2024). Claude 3 Model Card.<br>
+            Patterson et al. (2021). Carbon and the Broad Landscape of Digital Sustainability. IEEE.
+          </p>
+        </div>
+        <div class="artifact-divider"></div>
+        <div class="vp-grid">
+          <div class="vp-block">
+            <p class="vp-block-title">Unique Value</p>
+            <p class="vp-block-text">This artifact translates highly technical AI infrastructure knowledge into a clear visual format accessible to business stakeholders, executives, and students alike — a skill directly relevant to my role communicating data insights across technical and non-technical teams.</p>
+          </div>
+          <div class="vp-block">
+            <p class="vp-block-title">Relevance</p>
+            <p class="vp-block-text">As AI adoption accelerates in enterprise settings, understanding training costs and infrastructure trade-offs is critical for responsible AI investment and implementation decisions. This artifact demonstrates both technical literacy and professional communication ability.</p>
+          </div>
+        </div>
+
+        <div class="artifact-divider"></div>
+
+        <!-- LLM INFOGRAPHIC -->
+        <div class="infographic-wrap artifact-field-full">
+          <p class="infographic-label">Visual Deliverable — LLM Training Process &amp; Resource Costs</p>
+          <div style="padding: 40px 32px; background: #0D0D0F; font-family: 'Outfit', sans-serif;">
+
+            <!-- TITLE -->
+            <div style="text-align:center; margin-bottom: 44px;">
+              <p style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#B07B2A; margin-bottom:12px;">Generative AI · Large Language Models</p>
+              <h2 style="font-family:'Playfair Display',serif; font-size:34px; color:#F7F4EE; line-height:1.1; margin-bottom:12px;">How LLMs Are <em style="font-style:italic; color:#8BAEE8;">Built</em> &amp; What They <em style="font-style:italic; color:#8BAEE8;">Cost</em></h2>
+              <p style="font-size:13.5px; color:#6B6860; max-width:560px; margin:0 auto; line-height:1.65;">From raw internet text to a deployed AI assistant — the full training pipeline with real infrastructure costs across GPT-4, Claude 3, Gemini Ultra, and LLaMA 3.</p>
+            </div>
+
+            <!-- PIPELINE -->
+            <p style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#B07B2A; margin-bottom:20px; text-align:center;">Training Pipeline</p>
+            <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:14px; margin-bottom:48px;">
+
+              <!-- Step 1 -->
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:12px; padding:22px 18px;">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                  <div style="width:32px;height:32px;border-radius:8px;background:#1C2E4A;display:flex;align-items:center;justify-content:center;font-size:15px;">🗄️</div>
+                  <span style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#4A90D9;">Step 01</span>
+                </div>
+                <h4 style="font-family:'Playfair Display',serif;font-size:16px;color:#F7F4EE;margin-bottom:8px;">Data Collection &amp; Curation</h4>
+                <p style="font-size:12px;color:#6B6860;line-height:1.6;">Scraping trillions of tokens from web pages, books, code, and academic papers. Data is filtered, deduplicated, and quality-scored.</p>
+                <div style="margin-top:12px;padding:10px;background:#0D0D0F;border-radius:6px;">
+                  <p style="font-size:10.5px;color:#B07B2A;font-weight:600;">Scale: 1–15 trillion tokens &nbsp;·&nbsp; Cost: $1–10M</p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:12px; padding:22px 18px;">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                  <div style="width:32px;height:32px;border-radius:8px;background:#1C3A2E;display:flex;align-items:center;justify-content:center;font-size:15px;">⚙️</div>
+                  <span style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#3DAE7A;">Step 02</span>
+                </div>
+                <h4 style="font-family:'Playfair Display',serif;font-size:16px;color:#F7F4EE;margin-bottom:8px;">Preprocessing &amp; Tokenization</h4>
+                <p style="font-size:12px;color:#6B6860;line-height:1.6;">Text is cleaned, normalized, and converted into numerical tokens using a vocabulary (BPE or SentencePiece). Invalid or toxic content is removed.</p>
+                <div style="margin-top:12px;padding:10px;background:#0D0D0F;border-radius:6px;">
+                  <p style="font-size:10.5px;color:#3DAE7A;font-weight:600;">Vocab size: 32K–128K tokens</p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:12px; padding:22px 18px;">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                  <div style="width:32px;height:32px;border-radius:8px;background:#2A1C4A;display:flex;align-items:center;justify-content:center;font-size:15px;">🧠</div>
+                  <span style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#9B8AE8;">Step 03</span>
+                </div>
+                <h4 style="font-family:'Playfair Display',serif;font-size:16px;color:#F7F4EE;margin-bottom:8px;">Model Architecture Design</h4>
+                <p style="font-size:12px;color:#6B6860;line-height:1.6;">Engineers define the transformer architecture — number of layers, attention heads, hidden dimensions, and parameter count. Larger models require more careful design trade-offs.</p>
+                <div style="margin-top:12px;padding:10px;background:#0D0D0F;border-radius:6px;">
+                  <p style="font-size:10.5px;color:#9B8AE8;font-weight:600;">Params: 7B to 1.8T+ &nbsp;·&nbsp; Transformers</p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:12px; padding:22px 18px;">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                  <div style="width:32px;height:32px;border-radius:8px;background:#3A1C1C;display:flex;align-items:center;justify-content:center;font-size:15px;">🔥</div>
+                  <span style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#E85A5A;">Step 04</span>
+                </div>
+                <h4 style="font-family:'Playfair Display',serif;font-size:16px;color:#F7F4EE;margin-bottom:8px;">Pre-Training</h4>
+                <p style="font-size:12px;color:#6B6860;line-height:1.6;">The model learns to predict the next token across the entire dataset using thousands of GPUs/TPUs running in parallel for weeks or months. This is the most expensive step.</p>
+                <div style="margin-top:12px;padding:10px;background:#0D0D0F;border-radius:6px;">
+                  <p style="font-size:10.5px;color:#E85A5A;font-weight:600;">Cost: $10M–$100M+ &nbsp;·&nbsp; 1,000–25,000 GPUs</p>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:12px; padding:22px 18px;">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                  <div style="width:32px;height:32px;border-radius:8px;background:#1C3A1C;display:flex;align-items:center;justify-content:center;font-size:15px;">🎯</div>
+                  <span style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#5AC85A;">Step 05</span>
+                </div>
+                <h4 style="font-family:'Playfair Display',serif;font-size:16px;color:#F7F4EE;margin-bottom:8px;">Fine-Tuning &amp; RLHF</h4>
+                <p style="font-size:12px;color:#6B6860;line-height:1.6;">Human trainers rank model outputs. A reward model is trained on these rankings, then used to align the LLM via Reinforcement Learning from Human Feedback (RLHF) — making it helpful, harmless, and honest.</p>
+                <div style="margin-top:12px;padding:10px;background:#0D0D0F;border-radius:6px;">
+                  <p style="font-size:10.5px;color:#5AC85A;font-weight:600;">Human labelers: 100s–1,000s of contractors</p>
+                </div>
+              </div>
+
+              <!-- Step 6 -->
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:12px; padding:22px 18px;">
+                <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+                  <div style="width:32px;height:32px;border-radius:8px;background:#1C2E1C;display:flex;align-items:center;justify-content:center;font-size:15px;">🚀</div>
+                  <span style="font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#B07B2A;">Step 06</span>
+                </div>
+                <h4 style="font-family:'Playfair Display',serif;font-size:16px;color:#F7F4EE;margin-bottom:8px;">Evaluation &amp; Deployment</h4>
+                <p style="font-size:12px;color:#6B6860;line-height:1.6;">The model is benchmarked on standardized tests (MMLU, HumanEval, etc.), red-teamed for safety, then served via API using inference infrastructure at massive scale.</p>
+                <div style="margin-top:12px;padding:10px;background:#0D0D0F;border-radius:6px;">
+                  <p style="font-size:10.5px;color:#B07B2A;font-weight:600;">Inference cost: $0.001–$0.06 per 1K tokens</p>
+                </div>
+              </div>
+
+            </div><!-- /pipeline grid -->
+
+            <!-- MODEL COMPARISON -->
+            <p style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#B07B2A; margin-bottom:20px; text-align:center;">Model Comparison — Training Resources</p>
+            <div style="overflow-x:auto; margin-bottom:40px;">
+              <table style="width:100%; border-collapse:collapse; font-size:12.5px;">
+                <thead>
+                  <tr style="border-bottom:1px solid #2A2A30;">
+                    <th style="text-align:left;padding:12px 14px;color:#6B6860;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Model</th>
+                    <th style="text-align:left;padding:12px 14px;color:#6B6860;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Developer</th>
+                    <th style="text-align:left;padding:12px 14px;color:#6B6860;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Parameters</th>
+                    <th style="text-align:left;padding:12px 14px;color:#6B6860;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Training Data</th>
+                    <th style="text-align:left;padding:12px 14px;color:#6B6860;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Est. Compute Cost</th>
+                    <th style="text-align:left;padding:12px 14px;color:#6B6860;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Energy Use</th>
+                    <th style="text-align:left;padding:12px 14px;color:#6B6860;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">Training Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid #1E1E22;">
+                    <td style="padding:14px;color:#F7F4EE;font-weight:600;">GPT-4</td>
+                    <td style="padding:14px;color:#4A90D9;">OpenAI</td>
+                    <td style="padding:14px;color:#A8A49D;">~1.8T (est.)</td>
+                    <td style="padding:14px;color:#A8A49D;">~13T tokens</td>
+                    <td style="padding:14px;color:#E85A5A;font-weight:600;">~$100M</td>
+                    <td style="padding:14px;color:#A8A49D;">~50 GWh</td>
+                    <td style="padding:14px;color:#A8A49D;">~90–100 days</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #1E1E22; background:#13131A;">
+                    <td style="padding:14px;color:#F7F4EE;font-weight:600;">Claude 3 Opus</td>
+                    <td style="padding:14px;color:#9B8AE8;">Anthropic</td>
+                    <td style="padding:14px;color:#A8A49D;">Undisclosed</td>
+                    <td style="padding:14px;color:#A8A49D;">~1.4T tokens</td>
+                    <td style="padding:14px;color:#E85A5A;font-weight:600;">~$20–50M</td>
+                    <td style="padding:14px;color:#A8A49D;">~20–40 GWh</td>
+                    <td style="padding:14px;color:#A8A49D;">~60–90 days</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #1E1E22;">
+                    <td style="padding:14px;color:#F7F4EE;font-weight:600;">Gemini Ultra</td>
+                    <td style="padding:14px;color:#5AC85A;">Google</td>
+                    <td style="padding:14px;color:#A8A49D;">Undisclosed</td>
+                    <td style="padding:14px;color:#A8A49D;">Multimodal corpus</td>
+                    <td style="padding:14px;color:#E85A5A;font-weight:600;">~$20–80M</td>
+                    <td style="padding:14px;color:#A8A49D;">~30–60 GWh</td>
+                    <td style="padding:14px;color:#A8A49D;">~60–120 days</td>
+                  </tr>
+                  <tr style="background:#13131A;">
+                    <td style="padding:14px;color:#F7F4EE;font-weight:600;">LLaMA 3 (70B)</td>
+                    <td style="padding:14px;color:#E8A85A;">Meta</td>
+                    <td style="padding:14px;color:#A8A49D;">70B</td>
+                    <td style="padding:14px;color:#A8A49D;">~15T tokens</td>
+                    <td style="padding:14px;color:#E85A5A;font-weight:600;">~$3–10M</td>
+                    <td style="padding:14px;color:#A8A49D;">~5–15 GWh</td>
+                    <td style="padding:14px;color:#A8A49D;">~30–60 days</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- RESOURCE COST BARS -->
+            <p style="font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#B07B2A; margin-bottom:20px; text-align:center;">Resource Cost Breakdown — Where the Money Goes</p>
+            <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-bottom:16px;">
+
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:10px; padding:20px;">
+                <p style="font-size:11px;font-weight:600;color:#F7F4EE;margin-bottom:14px;">Compute (GPU/TPU Clusters)</p>
+                <div style="height:8px;background:#2A2A30;border-radius:4px;margin-bottom:8px;"><div style="height:8px;background:#4A90D9;border-radius:4px;width:65%;"></div></div>
+                <p style="font-size:11px;color:#6B6860;">~60–70% of total training cost. Top models use 1,000–25,000 NVIDIA A100/H100 GPUs running continuously for months.</p>
+              </div>
+
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:10px; padding:20px;">
+                <p style="font-size:11px;font-weight:600;color:#F7F4EE;margin-bottom:14px;">Energy Consumption</p>
+                <div style="height:8px;background:#2A2A30;border-radius:4px;margin-bottom:8px;"><div style="height:8px;background:#E85A5A;border-radius:4px;width:20%;"></div></div>
+                <p style="font-size:11px;color:#6B6860;">~15–25% of cost. Training a frontier model uses as much electricity as 1,000+ U.S. homes consume in a year. Carbon offset programs are now common.</p>
+              </div>
+
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:10px; padding:20px;">
+                <p style="font-size:11px;font-weight:600;color:#F7F4EE;margin-bottom:14px;">Data Acquisition &amp; Labeling</p>
+                <div style="height:8px;background:#2A2A30;border-radius:4px;margin-bottom:8px;"><div style="height:8px;background:#3DAE7A;border-radius:4px;width:10%;"></div></div>
+                <p style="font-size:11px;color:#6B6860;">~5–15% of cost. Includes web scraping infrastructure, licensing fees, and thousands of human labelers for RLHF feedback and safety annotation.</p>
+              </div>
+
+              <div style="background:#18181C; border:1px solid #2A2A30; border-radius:10px; padding:20px;">
+                <p style="font-size:11px;font-weight:600;color:#F7F4EE;margin-bottom:14px;">Research, Engineering &amp; Safety</p>
+                <div style="height:8px;background:#2A2A30;border-radius:4px;margin-bottom:8px;"><div style="height:8px;background:#9B8AE8;border-radius:4px;width:15%;"></div></div>
+                <p style="font-size:11px;color:#6B6860;">~10–20% of cost. Hundreds of ML researchers and engineers, red-teaming, evaluation runs, and safety testing before any public release.</p>
+              </div>
+
+            </div>
+
+            <p style="font-size:10.5px; color:#3D3B37; text-align:center; margin-top:24px;">* Cost and compute figures are estimates based on publicly available technical reports and industry analysis. Exact figures are proprietary.</p>
+
+          </div><!-- /dark bg -->
+        </div><!-- /infographic-wrap -->
+
+      </div><!-- /artifact-body -->
+    </div><!-- /artifact-container -->
+  </div><!-- /section-wrap -->
+
 </div><!-- /artifacts-section -->
 
 <footer>
