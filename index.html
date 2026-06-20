@@ -1588,6 +1588,407 @@ footer span { color: var(--gold); }
     </div><!-- /artifact-container -->
   </div><!-- /section-wrap -->
 
+  <!-- ARTIFACT 05 -->
+  <div class="section-wrap" style="margin-top: 40px;">
+    <div class="artifact-container">
+      <div class="artifact-header">
+        <div>
+          <p class="artifact-number">Artifact 05</p>
+          <h3 class="artifact-title">Pre-Trained Model Comparison: Decision Matrix</h3>
+          <p class="artifact-intro">
+            A structured analysis and visual decision matrix comparing six pre-trained models across NLP/Generative AI, Computer Vision, and Tabular Data domains — evaluating size, accuracy, speed, interpretability, and energy use to guide informed model selection.
+          </p>
+        </div>
+        <div class="artifact-badge">
+          <p class="badge-field">Domain</p>
+          <p class="badge-value">Model Selection</p>
+          <p class="badge-field">Type</p>
+          <p class="badge-value">Decision Matrix</p>
+          <p class="badge-field">Format</p>
+          <p class="badge-value">HTML</p>
+        </div>
+      </div>
+
+      <div class="artifact-body">
+        <div>
+          <p class="artifact-field-label">Objective</p>
+          <p class="artifact-field-text">To analyze trade-offs between model size, accuracy, and speed across three AI domains and develop a decision matrix that guides practitioners toward the most appropriate pre-trained model for a given application scenario.</p>
+        </div>
+        <div>
+          <p class="artifact-field-label">Methodology</p>
+          <p class="artifact-field-text">Six models were selected — two per domain — covering GPT-4o and BERT (NLP/GenAI), EfficientNet-B4 and MobileNetV3 (Computer Vision), and LightGBM and XGBoost (Tabular). Data on parameters, benchmark scores, inference latency, and interpretability were gathered from published technical reports, Hugging Face model cards, and peer-reviewed benchmarks. Each criterion was scored 1–5 to enable direct cross-domain comparison.</p>
+        </div>
+        <div class="artifact-divider"></div>
+        <div class="artifact-field-full">
+          <p class="artifact-field-label">Introduction</p>
+          <p class="artifact-field-text">Selecting a pre-trained model is rarely about finding the best model in absolute terms — it is about finding the right model for a specific constraint set. A model with state-of-the-art accuracy may be unusable in a latency-sensitive production environment. A highly interpretable model may sacrifice the accuracy needed for a safety-critical task. Understanding these trade-offs is foundational to responsible AI deployment. This artifact maps those trade-offs visually so that both technical and non-technical stakeholders can participate in the model selection decision.</p>
+        </div>
+        <div class="artifact-divider"></div>
+        <div>
+          <p class="artifact-field-label">Tools and Technologies Used</p>
+          <div class="tools-list">
+            <span class="tool-chip">HTML5 / CSS3</span>
+            <span class="tool-chip">Hugging Face Model Cards</span>
+            <span class="tool-chip">MLPerf Benchmarks</span>
+            <span class="tool-chip">Published Technical Reports</span>
+            <span class="tool-chip">Visual Design</span>
+          </div>
+        </div>
+        <div>
+          <p class="artifact-field-label">References</p>
+          <p class="artifact-field-text" style="font-size:13px;line-height:1.8;">
+            OpenAI. (2024). GPT-4o System Card.<br>
+            Devlin et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers. NAACL.<br>
+            Tan &amp; Le. (2019). EfficientNet: Rethinking Model Scaling. ICML.<br>
+            Howard et al. (2019). Searching for MobileNetV3. ICCV.<br>
+            Ke et al. (2017). LightGBM: A Highly Efficient Gradient Boosting Decision Tree. NeurIPS.<br>
+            Chen &amp; Guestrin. (2016). XGBoost: A Scalable Tree Boosting System. KDD.
+          </p>
+        </div>
+        <div class="artifact-divider"></div>
+        <div class="vp-grid">
+          <div class="vp-block">
+            <p class="vp-block-title">Unique Value</p>
+            <p class="vp-block-text">Most model comparisons stay within a single domain. This artifact deliberately crosses domains to reveal how fundamentally different the trade-off logic is between NLP, vision, and tabular tasks — helping practitioners avoid applying domain-specific intuitions where they do not apply.</p>
+          </div>
+          <div class="vp-block">
+            <p class="vp-block-title">Relevance</p>
+            <p class="vp-block-text">In my current role at Jeffersonville PVcells, model selection decisions directly affect whether AI tools get adopted in production. A decision matrix like this translates technical trade-offs into a format that engineers, planners, and management can all reason from together.</p>
+          </div>
+        </div>
+
+        <div class="artifact-divider"></div>
+
+        <!-- DECISION MATRIX INFOGRAPHIC -->
+        <div class="infographic-wrap artifact-field-full">
+          <p class="infographic-label">Visual Deliverable — Pre-Trained Model Decision Matrix</p>
+          <div style="padding:40px 32px;background:#F7F4EE;font-family:'Outfit',sans-serif;">
+
+            <!-- TITLE -->
+            <div style="text-align:center;margin-bottom:44px;">
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#1B4FA8;margin-bottom:12px;">Model Selection · Trade-Off Analysis</p>
+              <h2 style="font-family:'Playfair Display',serif;font-size:34px;color:#12110F;line-height:1.1;margin-bottom:12px;">Pre-Trained Model <em style="font-style:italic;color:#1B4FA8;">Decision Matrix</em></h2>
+              <p style="font-size:13.5px;color:#6B6860;max-width:600px;margin:0 auto;line-height:1.65;">Six models across three domains compared on size, accuracy, speed, interpretability, and energy — scored 1 (low) to 5 (high).</p>
+            </div>
+
+            <!-- SCORING LEGEND -->
+            <div style="display:flex;justify-content:center;gap:16px;margin-bottom:36px;flex-wrap:wrap;">
+              <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#444441;font-weight:500;">
+                <div style="display:flex;gap:2px;">
+                  <span style="width:12px;height:12px;border-radius:2px;background:#E85A5A;display:inline-block;"></span>
+                  <span style="width:12px;height:12px;border-radius:2px;background:#E8A85A;display:inline-block;"></span>
+                  <span style="width:12px;height:12px;border-radius:2px;background:#E8D85A;display:inline-block;"></span>
+                  <span style="width:12px;height:12px;border-radius:2px;background:#9BE85A;display:inline-block;"></span>
+                  <span style="width:12px;height:12px;border-radius:2px;background:#3DAE7A;display:inline-block;"></span>
+                </div>
+                Score 1 = Low &nbsp;·&nbsp; Score 5 = High
+              </div>
+              <div style="font-size:12px;color:#888780;">* Higher score = better for that criterion</div>
+            </div>
+
+            <!-- DOMAIN: NLP / GEN AI -->
+            <div style="margin-bottom:32px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #1B4FA8;">
+                <div style="width:32px;height:32px;border-radius:8px;background:#E8EFFA;display:flex;align-items:center;justify-content:center;font-size:15px;">💬</div>
+                <span style="font-family:'Playfair Display',serif;font-size:20px;color:#1B4FA8;">NLP / Generative AI</span>
+                <span style="margin-left:auto;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#888780;">2 Models</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+
+                <!-- GPT-4o -->
+                <div style="background:#fff;border:1px solid #DDD9CF;border-radius:12px;overflow:hidden;">
+                  <div style="background:#1B4FA8;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <p style="font-size:15px;font-family:'Playfair Display',serif;color:#fff;margin-bottom:2px;">GPT-4o</p>
+                      <p style="font-size:10px;color:#8BAEE8;">OpenAI · Multimodal LLM</p>
+                    </div>
+                    <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:#E8EFFA;color:#1B4FA8;">NLP/GenAI</span>
+                  </div>
+                  <div style="padding:16px 18px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Parameters</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~200B (est.)</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">MMLU Score</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">88.7%</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Latency</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~1–3s / query</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">API Cost</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">$5 / 1M tokens</p></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Model Size</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E85A5A;border-radius:3px;width:20%;"></div></div><span style="font-size:10px;font-weight:700;color:#E85A5A;width:16px;">1</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Accuracy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Speed</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8D85A;border-radius:3px;width:60%;"></div></div><span style="font-size:10px;font-weight:700;color:#9B8A00;width:16px;">3</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Interpretability</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8A85A;border-radius:3px;width:40%;"></div></div><span style="font-size:10px;font-weight:700;color:#E8A85A;width:16px;">2</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Energy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E85A5A;border-radius:3px;width:20%;"></div></div><span style="font-size:10px;font-weight:700;color:#E85A5A;width:16px;">1</span></div>
+                    </div>
+                    <div style="margin-top:12px;padding:8px 10px;background:#F7F4EE;border-radius:6px;font-size:11px;color:#6B6860;"><strong>Best for:</strong> Complex reasoning, content generation, multimodal tasks where accuracy is paramount and compute cost is acceptable.</div>
+                  </div>
+                </div>
+
+                <!-- BERT -->
+                <div style="background:#fff;border:1px solid #DDD9CF;border-radius:12px;overflow:hidden;">
+                  <div style="background:#3B5EA6;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <p style="font-size:15px;font-family:'Playfair Display',serif;color:#fff;margin-bottom:2px;">BERT-Base</p>
+                      <p style="font-size:10px;color:#8BAEE8;">Google · Encoder LLM</p>
+                    </div>
+                    <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:#E8EFFA;color:#1B4FA8;">NLP/GenAI</span>
+                  </div>
+                  <div style="padding:16px 18px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Parameters</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">110M</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">GLUE Score</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">79.6%</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Latency</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~20–50ms</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Access</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">Open source</p></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Model Size</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:80%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">4</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Accuracy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8D85A;border-radius:3px;width:60%;"></div></div><span style="font-size:10px;font-weight:700;color:#9B8A00;width:16px;">3</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Speed</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Interpretability</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8D85A;border-radius:3px;width:60%;"></div></div><span style="font-size:10px;font-weight:700;color:#9B8A00;width:16px;">3</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Energy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#9BE85A;border-radius:3px;width:80%;"></div></div><span style="font-size:10px;font-weight:700;color:#5A9B00;width:16px;">4</span></div>
+                    </div>
+                    <div style="margin-top:12px;padding:8px 10px;background:#F7F4EE;border-radius:6px;font-size:11px;color:#6B6860;"><strong>Best for:</strong> Text classification, NER, sentiment analysis in production pipelines where speed and cost matter more than generation capability.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOMAIN: COMPUTER VISION -->
+            <div style="margin-bottom:32px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #993C1D;">
+                <div style="width:32px;height:32px;border-radius:8px;background:#FAECE7;display:flex;align-items:center;justify-content:center;font-size:15px;">👁</div>
+                <span style="font-family:'Playfair Display',serif;font-size:20px;color:#993C1D;">Computer Vision</span>
+                <span style="margin-left:auto;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#888780;">2 Models</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+
+                <!-- EfficientNet-B4 -->
+                <div style="background:#fff;border:1px solid #DDD9CF;border-radius:12px;overflow:hidden;">
+                  <div style="background:#993C1D;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <p style="font-size:15px;font-family:'Playfair Display',serif;color:#fff;margin-bottom:2px;">EfficientNet-B4</p>
+                      <p style="font-size:10px;color:#FAECE7;">Google · CNN Classifier</p>
+                    </div>
+                    <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:#FAECE7;color:#993C1D;">Vision</span>
+                  </div>
+                  <div style="padding:16px 18px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Parameters</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">19M</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">ImageNet Top-1</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">83.6%</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Latency</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~120ms (GPU)</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Memory</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~75MB</p></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Model Size</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:80%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">4</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Accuracy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Speed</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8D85A;border-radius:3px;width:60%;"></div></div><span style="font-size:10px;font-weight:700;color:#9B8A00;width:16px;">3</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Interpretability</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8A85A;border-radius:3px;width:40%;"></div></div><span style="font-size:10px;font-weight:700;color:#E8A85A;width:16px;">2</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Energy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8D85A;border-radius:3px;width:60%;"></div></div><span style="font-size:10px;font-weight:700;color:#9B8A00;width:16px;">3</span></div>
+                    </div>
+                    <div style="margin-top:12px;padding:8px 10px;background:#F7F4EE;border-radius:6px;font-size:11px;color:#6B6860;"><strong>Best for:</strong> High-accuracy image classification where GPU is available and top-tier ImageNet performance is required.</div>
+                  </div>
+                </div>
+
+                <!-- MobileNetV3 -->
+                <div style="background:#fff;border:1px solid #DDD9CF;border-radius:12px;overflow:hidden;">
+                  <div style="background:#C0501E;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <p style="font-size:15px;font-family:'Playfair Display',serif;color:#fff;margin-bottom:2px;">MobileNetV3</p>
+                      <p style="font-size:10px;color:#FAECE7;">Google · Lightweight CNN</p>
+                    </div>
+                    <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:#FAECE7;color:#993C1D;">Vision</span>
+                  </div>
+                  <div style="padding:16px 18px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Parameters</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">5.4M</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">ImageNet Top-1</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">75.2%</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Latency</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~15ms (CPU)</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Memory</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~22MB</p></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Model Size</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Accuracy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8D85A;border-radius:3px;width:60%;"></div></div><span style="font-size:10px;font-weight:700;color:#9B8A00;width:16px;">3</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Speed</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Interpretability</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#E8D85A;border-radius:3px;width:60%;"></div></div><span style="font-size:10px;font-weight:700;color:#9B8A00;width:16px;">3</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Energy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                    </div>
+                    <div style="margin-top:12px;padding:8px 10px;background:#F7F4EE;border-radius:6px;font-size:11px;color:#6B6860;"><strong>Best for:</strong> Edge deployment, mobile apps, and IoT devices where low latency, small footprint, and CPU-only inference are required.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOMAIN: TABULAR -->
+            <div style="margin-bottom:32px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid #0F6E56;">
+                <div style="width:32px;height:32px;border-radius:8px;background:#E1F5EE;display:flex;align-items:center;justify-content:center;font-size:15px;">📊</div>
+                <span style="font-family:'Playfair Display',serif;font-size:20px;color:#0F6E56;">Tabular Data</span>
+                <span style="margin-left:auto;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#888780;">2 Models</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+
+                <!-- LightGBM -->
+                <div style="background:#fff;border:1px solid #DDD9CF;border-radius:12px;overflow:hidden;">
+                  <div style="background:#0F6E56;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <p style="font-size:15px;font-family:'Playfair Display',serif;color:#fff;margin-bottom:2px;">LightGBM</p>
+                      <p style="font-size:10px;color:#A8D5C8;">Microsoft · Gradient Boosting</p>
+                    </div>
+                    <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:#E1F5EE;color:#0F6E56;">Tabular</span>
+                  </div>
+                  <div style="padding:16px 18px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Model Size</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~1–50MB</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Higgs AUC</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">0.865</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Latency</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">&lt;1ms / row</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">SHAP Support</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">Native</p></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Model Size</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Accuracy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#9BE85A;border-radius:3px;width:80%;"></div></div><span style="font-size:10px;font-weight:700;color:#5A9B00;width:16px;">4</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Speed</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Interpretability</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Energy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                    </div>
+                    <div style="margin-top:12px;padding:8px 10px;background:#F7F4EE;border-radius:6px;font-size:11px;color:#6B6860;"><strong>Best for:</strong> High-volume structured data prediction (fraud, demand forecasting, manufacturing QC) where speed, interpretability, and low resource cost are all priorities.</div>
+                  </div>
+                </div>
+
+                <!-- XGBoost -->
+                <div style="background:#fff;border:1px solid #DDD9CF;border-radius:12px;overflow:hidden;">
+                  <div style="background:#1A7A60;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                      <p style="font-size:15px;font-family:'Playfair Display',serif;color:#fff;margin-bottom:2px;">XGBoost</p>
+                      <p style="font-size:10px;color:#A8D5C8;">DMLC · Gradient Boosting</p>
+                    </div>
+                    <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:#E1F5EE;color:#0F6E56;">Tabular</span>
+                  </div>
+                  <div style="padding:16px 18px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Model Size</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~1–100MB</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Higgs AUC</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">0.858</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">Latency</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">~2–5ms / row</p></div>
+                      <div><p style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#A8A49D;margin-bottom:3px;">SHAP Support</p><p style="font-size:12.5px;color:#3D3B37;font-weight:600;">Native</p></div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:6px;">
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Model Size</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Accuracy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#9BE85A;border-radius:3px;width:80%;"></div></div><span style="font-size:10px;font-weight:700;color:#5A9B00;width:16px;">4</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Speed</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#9BE85A;border-radius:3px;width:80%;"></div></div><span style="font-size:10px;font-weight:700;color:#5A9B00;width:16px;">4</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Interpretability</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                      <div style="display:flex;align-items:center;gap:8px;"><span style="font-size:10.5px;color:#6B6860;width:110px;">Energy</span><div style="flex:1;height:6px;background:#EDE9E0;border-radius:3px;"><div style="height:6px;background:#3DAE7A;border-radius:3px;width:100%;"></div></div><span style="font-size:10px;font-weight:700;color:#3DAE7A;width:16px;">5</span></div>
+                    </div>
+                    <div style="margin-top:12px;padding:8px 10px;background:#F7F4EE;border-radius:6px;font-size:11px;color:#6B6860;"><strong>Best for:</strong> Kaggle-style structured data competitions, credit scoring, and enterprise ML pipelines where robust performance and full SHAP explainability are both required.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SUMMARY TABLE -->
+            <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#12110F;margin-bottom:14px;">Summary Comparison Table</p>
+            <div style="overflow-x:auto;margin-bottom:28px;">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;">
+                <thead>
+                  <tr style="background:#12110F;color:#F7F4EE;">
+                    <th style="padding:12px 14px;text-align:left;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Model</th>
+                    <th style="padding:12px 14px;text-align:left;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Domain</th>
+                    <th style="padding:12px 10px;text-align:center;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Size ▲</th>
+                    <th style="padding:12px 10px;text-align:center;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Accuracy</th>
+                    <th style="padding:12px 10px;text-align:center;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Speed</th>
+                    <th style="padding:12px 10px;text-align:center;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Interpretability</th>
+                    <th style="padding:12px 10px;text-align:center;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Energy</th>
+                    <th style="padding:12px 14px;text-align:center;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;">Total /25</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid #EDE9E0;">
+                    <td style="padding:12px 14px;font-weight:600;color:#12110F;">GPT-4o</td>
+                    <td style="padding:12px 14px;color:#1B4FA8;">NLP/GenAI</td>
+                    <td style="padding:12px 10px;text-align:center;color:#E85A5A;font-weight:700;">1</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#9B8A00;font-weight:700;">3</td>
+                    <td style="padding:12px 10px;text-align:center;color:#E8A85A;font-weight:700;">2</td>
+                    <td style="padding:12px 10px;text-align:center;color:#E85A5A;font-weight:700;">1</td>
+                    <td style="padding:12px 10px;text-align:center;font-weight:700;color:#12110F;">12</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #EDE9E0;background:#F7F4EE;">
+                    <td style="padding:12px 14px;font-weight:600;color:#12110F;">BERT-Base</td>
+                    <td style="padding:12px 14px;color:#1B4FA8;">NLP/GenAI</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">4</td>
+                    <td style="padding:12px 10px;text-align:center;color:#9B8A00;font-weight:700;">3</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#9B8A00;font-weight:700;">3</td>
+                    <td style="padding:12px 10px;text-align:center;color:#5A9B00;font-weight:700;">4</td>
+                    <td style="padding:12px 10px;text-align:center;font-weight:700;color:#12110F;">19</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #EDE9E0;">
+                    <td style="padding:12px 14px;font-weight:600;color:#12110F;">EfficientNet-B4</td>
+                    <td style="padding:12px 14px;color:#993C1D;">Vision</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">4</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#9B8A00;font-weight:700;">3</td>
+                    <td style="padding:12px 10px;text-align:center;color:#E8A85A;font-weight:700;">2</td>
+                    <td style="padding:12px 10px;text-align:center;color:#9B8A00;font-weight:700;">3</td>
+                    <td style="padding:12px 10px;text-align:center;font-weight:700;color:#12110F;">17</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #EDE9E0;background:#F7F4EE;">
+                    <td style="padding:12px 14px;font-weight:600;color:#12110F;">MobileNetV3</td>
+                    <td style="padding:12px 14px;color:#993C1D;">Vision</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#9B8A00;font-weight:700;">3</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#9B8A00;font-weight:700;">3</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;font-weight:700;color:#12110F;">21</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid #EDE9E0;">
+                    <td style="padding:12px 14px;font-weight:600;color:#12110F;">LightGBM</td>
+                    <td style="padding:12px 14px;color:#0F6E56;">Tabular</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#5A9B00;font-weight:700;">4</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;font-weight:700;color:#0F6E56;">24</td>
+                  </tr>
+                  <tr style="background:#F7F4EE;">
+                    <td style="padding:12px 14px;font-weight:600;color:#12110F;">XGBoost</td>
+                    <td style="padding:12px 14px;color:#0F6E56;">Tabular</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#5A9B00;font-weight:700;">4</td>
+                    <td style="padding:12px 10px;text-align:center;color:#5A9B00;font-weight:700;">4</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;color:#3DAE7A;font-weight:700;">5</td>
+                    <td style="padding:12px 10px;text-align:center;font-weight:700;color:#0F6E56;">23</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="font-size:10px;color:#A8A49D;margin-top:8px;">▲ Size score = inverse of footprint (5 = smallest). All scores 1–5; higher is better for that criterion.</p>
+            </div>
+
+            <!-- CONCLUSION -->
+            <div style="background:#12110F;border-radius:14px;padding:28px;">
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#B07B2A;margin-bottom:16px;text-align:center;">Conclusion &amp; Recommendations</p>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+                <div style="background:#18181C;border-radius:10px;padding:18px;">
+                  <p style="font-size:11px;font-weight:700;color:#8BAEE8;margin-bottom:8px;">NLP / Generative AI</p>
+                  <p style="font-size:11.5px;color:#6B6860;line-height:1.65;">Use <strong style="color:#F7F4EE;">GPT-4o</strong> when maximum accuracy and reasoning capability justify the cost. Use <strong style="color:#F7F4EE;">BERT</strong> for production classification tasks where latency, cost, and open-source access are constraints.</p>
+                </div>
+                <div style="background:#18181C;border-radius:10px;padding:18px;">
+                  <p style="font-size:11px;font-weight:700;color:#E8A85A;margin-bottom:8px;">Computer Vision</p>
+                  <p style="font-size:11.5px;color:#6B6860;line-height:1.65;">Use <strong style="color:#F7F4EE;">EfficientNet-B4</strong> for server-side high-accuracy tasks like medical imaging or quality inspection. Use <strong style="color:#F7F4EE;">MobileNetV3</strong> for edge, mobile, or real-time embedded deployment.</p>
+                </div>
+                <div style="background:#18181C;border-radius:10px;padding:18px;">
+                  <p style="font-size:11px;font-weight:700;color:#3DAE7A;margin-bottom:8px;">Tabular Data</p>
+                  <p style="font-size:11.5px;color:#6B6860;line-height:1.65;">Both <strong style="color:#F7F4EE;">LightGBM</strong> and <strong style="color:#F7F4EE;">XGBoost</strong> are strong choices. Prefer LightGBM for very large datasets and fastest training. Prefer XGBoost when robust cross-validation and broader ecosystem integrations matter more.</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /bg -->
+        </div><!-- /infographic-wrap -->
+
+      </div><!-- /artifact-body -->
+    </div><!-- /artifact-container -->
+  </div><!-- /section-wrap -->
+
 </div><!-- /artifacts-section -->
 
 <footer>
